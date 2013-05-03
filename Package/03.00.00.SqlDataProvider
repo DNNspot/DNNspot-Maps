@@ -1,0 +1,56 @@
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ADD [Priority] [varchar](10) NULL
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ADD [ProximityX] AS (cos(radians([Latitude]))*cos(radians([Longitude]))) PERSISTED
+	
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ADD [ProximityY] AS (cos(radians([Latitude]))*sin(radians([Longitude]))) PERSISTED
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ADD [ProximityZ] AS (sin(radians([Latitude]))) PERSISTED
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}DNNspot_Find_By_Proximity]
+   @CenterLat float,
+   @CenterLon float,
+   @SearchRadiusMiles int,
+   @CustomField varchar(300)
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+    -- Store the radius of the earth in miles (so we can search by miles)
+    declare @EarthRadius float
+    set @EarthRadius = 3963.1676
+    -- Calculate the X, Y and Z axis values for the center point
+
+    declare @CenterX float
+    declare @CenterY float
+    declare @CenterZ float
+    set @CenterX = cos(radians(@CenterLat)) * cos(radians(@CenterLon))
+    set @CenterY = cos(radians(@CenterLat)) * sin(radians(@CenterLon))
+    set @CenterZ = sin(radians(@CenterLat))
+	
+	-- Perform the database search
+    SELECT
+		markers.*,
+		markers.Latitude,
+		markers.Longitude,
+		Distance = @EarthRadius * acos(ProximityX * @CenterX + ProximityY * @CenterY + ProximityZ *@CenterZ)
+    FROM {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers] as markers
+    WHERE
+		@EarthRadius * acos(ProximityX * @CenterX + ProximityY * @CenterY + ProximityZ * @CenterZ) <= @SearchRadiusMiles
+		AND
+		(
+			markers.CustomField LIKE '%' + @CustomField + '%'
+		)
+    ORDER BY Priority ASC, Distance ASC, newid() ASC
+
+	
+		
+END
+GO

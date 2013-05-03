@@ -1,0 +1,7 @@
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Release\DNNspot.Maps.Common.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Release\DNNspot.Maps.Common.pdb
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Release\DNNspot.EntitySpaces.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\obj\Release\ResolveAssemblyReference.cache
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\obj\Release\DNNspot.Maps.Common.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\obj\Release\DNNspot.Maps.Common.pdb
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Release\DNNspot.Licensing.ClientCommon.dll

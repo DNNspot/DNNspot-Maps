@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Module marker geocoder</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var moduleId;
+        var markerId;
+
+        function Querystring(qs) {
+            this.params = {};
+
+            if (qs == null) qs = location.search.substring(1, location.search.length);
+            if (qs.length == 0) return;
+
+            qs = qs.replace(/\+/g, ' ');
+            var args = qs.split('&');
+
+            for (var i = 0; i < args.length; i++) {
+                var pair = args[i].split('=');
+                var name = decodeURIComponent(pair[0]);
+
+                var value = (pair.length == 2)
+			? decodeURIComponent(pair[1])
+			: name;
+
+                this.params[name] = value;
+            }
+        }
+
+        Querystring.prototype.get = function (key, default_) {
+            var value = this.params[key];
+            return (value != null) ? value : default_;
+        }
+
+        Querystring.prototype.contains = function (key) {
+            var value = this.params[key];
+            return (value != null);
+        }
+
+        function geocodeNextRecord() {
+            jQuery('#status').prepend('<p>Processing... </p>');
+            var geocodeUrl = "GeocodeHandler.ashx?";
+            var hasModuleId = 0;
+            if (moduleId != null) {
+                geocodeUrl += "moduleId=" + moduleId;
+                hasModuleId = 1;
+            }
+
+            if (markerId != null) {
+                if (hasModuleId == 1) {
+                    geocodeUrl += + "&";
+                }
+                geocodeUrl += "markerId=" + markerId;
+            }
+
+            jQuery.getJSON(geocodeUrl, null, getNextRecordCallback);
+        }
+
+        function getNextRecordCallback(data, textStatus) {
+            if (data == null) {
+                jQuery('#status p:first').append("An unknown error occurred. Please try again.");
+                return;
+            }
+
+            jQuery('#status p:first').append(data.message);
+
+            if (data.hasMore)
+                geocodeNextRecord();
+            else {
+                jQuery('#status p:first').append("completed.");
+                window.opener.location.href = window.opener.location.href;
+                self.close();
+            }
+        }
+
+        jQuery(function ($) {
+            var qs = new Querystring();
+            moduleId = qs.get("moduleId");
+
+            var qs2 = new Querystring();
+            markerId = qs.get("markerId");
+
+            geocodeNextRecord();
+        }); 
+    </script>
+    
+    <div id="status" style="height:235px;overflow:auto;"></div>
+
+</body>
+</html>

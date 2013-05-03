@@ -1,0 +1,11 @@
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ALTER COLUMN [Title] [nvarchar](250) null
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ALTER COLUMN [Address1] [nvarchar](250) null
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ALTER COLUMN [Address2] [nvarchar](250) null
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ALTER COLUMN [City] [nvarchar](250) null

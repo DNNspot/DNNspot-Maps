@@ -1,0 +1,46 @@
+/****** Object:  StoredProcedure [dbo].[DNNspot_Find_By_Proximity]    Script Date: 11/14/2012 09:09:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE {databaseOwner}[{objectQualifier}DNNspot_Find_By_Proximity]
+   @CenterLat float,
+   @CenterLon float,
+   @SearchRadiusMiles int,
+   @CustomField varchar(300),
+   @ModuleId int
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+    -- Store the radius of the earth in miles (so we can search by miles)
+    declare @EarthRadius float
+    set @EarthRadius = 3963.1676
+    -- Calculate the X, Y and Z axis values for the center point
+
+    declare @CenterX float
+    declare @CenterY float
+    declare @CenterZ float
+    set @CenterX = cos(radians(@CenterLat)) * cos(radians(@CenterLon))
+    set @CenterY = cos(radians(@CenterLat)) * sin(radians(@CenterLon))
+    set @CenterZ = sin(radians(@CenterLat))
+	
+	-- Perform the database search
+    SELECT
+		markers.*,
+		markers.Latitude,
+		markers.Longitude,
+		Distance = @EarthRadius * acos(ProximityX * @CenterX + ProximityY * @CenterY + ProximityZ *@CenterZ)
+    FROM {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers] as markers
+    WHERE
+		@EarthRadius * acos(ProximityX * @CenterX + ProximityY * @CenterY + ProximityZ * @CenterZ) <= @SearchRadiusMiles
+		AND
+		(
+			markers.CustomField LIKE '%' + @CustomField + '%'
+		)
+		AND @ModuleId = markers.ModuleId
+    ORDER BY Priority ASC, Distance ASC, newid() ASC
+
+	
+		
+END

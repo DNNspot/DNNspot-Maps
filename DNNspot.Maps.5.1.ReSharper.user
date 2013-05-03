@@ -1,0 +1,570 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14854" fromTop="31" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx" caret="483" fromTop="8" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx.cs" caret="886" fromTop="21" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Settings.ascx.cs" caret="886" fromTop="21" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CitiesChange.ashx.cs" caret="884" fromTop="20" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CountriesChange.ashx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CustomFieldChange.ashx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:EditMarker.ascx" caret="242" fromTop="3" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:EditMarker.ascx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeHandler.ashx.cs" caret="886" fromTop="21" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeResponse.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="880" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:DnnHelper.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Parser.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:DnnHelper.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="884" fromTop="20" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeResponse.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="882" fromTop="19" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="880" fromTop="18" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:DnnHelper.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="1112" fromTop="10" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="0" fromTop="0" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="0" fromTop="0" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="0" fromTop="0" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="6576" fromTop="7" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="0" fromTop="0" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="884" fromTop="20" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Parser.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:DnnHelper.cs" caret="0" fromTop="0" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:DnnHelper.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="0" fromTop="0" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="884" fromTop="20" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="0" fromTop="0" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="884" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="ModuleSettingNames`0" priority="11" />
+      <Item value="ControlKeys`0" priority="0" />
+      <Item value="public" priority="17" />
+      <Item value="const" priority="4" />
+      <Item value="string" priority="38" />
+      <Item value="ParseCsvFile`0" priority="0" />
+      <Item value="Server" priority="1" />
+      <Item value="File`0" priority="0" />
+      <Item value="HttpContext`0" priority="0" />
+      <Item value="Response" priority="2" />
+      <Item value="Request" priority="11" />
+      <Item value="litMessage" priority="2" />
+      <Item value="return" priority="3" />
+      <Item value="status" priority="2" />
+      <Item value="MarkerCollection`0" priority="13" />
+      <Item value="new" priority="28" />
+      <Item value="MarkerCollection" priority="4" />
+      <Item value="MarkerQuery`0" priority="4" />
+      <Item value="MarkerQuery" priority="4" />
+      <Item value="q" priority="68" />
+      <Item value="ModuleId" priority="15" />
+      <Item value="String`0" priority="34" />
+      <Item value="markers" priority="12" />
+      <Item value="null" priority="7" />
+      <Item value="float" priority="1" />
+      <Item value="foreach" priority="2" />
+      <Item value="Marker`0" priority="10" />
+      <Item value="in" priority="2" />
+      <Item value="if" priority="45" />
+      <Item value="marker" priority="43" />
+      <Item value="DNNspot" priority="6" />
+      <Item value="Maps" priority="11" />
+      <Item value="GeocodeHandler`0" priority="0" />
+      <Item value="else" priority="11" />
+      <Item value="pnlGeocodeMarkers" priority="1" />
+      <Item value="false" priority="5" />
+      <Item value="true" priority="9" />
+      <Item value="txtShadowUrl" priority="0" />
+      <Item value="txtTitle" priority="0" />
+      <Item value="txtIconUrl" priority="0" />
+      <Item value="_markerId" priority="7" />
+      <Item value="Marker" priority="7" />
+      <Item value="btnDelete" priority="0" />
+      <Item value="ModuleWebPath" priority="1" />
+      <Item value="markerId" priority="0" />
+      <Item value="lblMessage" priority="1" />
+      <Item value="xmlResponse" priority="1" />
+      <Item value="deserialized" priority="4" />
+      <Item value="jsonResponse" priority="0" />
+      <Item value="bool" priority="9" />
+      <Item value="double" priority="1" />
+      <Item value="GeocodeResponse`0" priority="0" />
+      <Item value="cbGeocodeOnSave" priority="0" />
+      <Item value="txtLatitude" priority="1" />
+      <Item value="txtLongitude" priority="2" />
+      <Item value="txtListTemplate" priority="4" />
+      <Item value="var" priority="14" />
+      <Item value="StringBuilder" priority="2" />
+      <Item value="Settings" priority="6" />
+      <Item value="Convert`0" priority="7" />
+      <Item value="html" priority="9" />
+      <Item value="litListing" priority="2" />
+      <Item value="template" priority="4" />
+      <Item value="tempHtml" priority="16" />
+      <Item value="targetModule" priority="0" />
+      <Item value="int" priority="11" />
+      <Item value="ddlModuleToUse" priority="2" />
+      <Item value="isTrial" priority="9" />
+      <Item value="markerQuery" priority="1" />
+      <Item value="maxPoints" priority="13" />
+      <Item value="ModuleBase`0" priority="2" />
+      <Item value="controlPath" priority="0" />
+      <Item value="message" priority="0" />
+      <Item value="litMarkers" priority="1" />
+      <Item value="litLicense" priority="7" />
+      <Item value="Common" priority="4" />
+      <Item value="MaxPoints" priority="0" />
+      <Item value="IsTrial" priority="0" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="geocodeResponse" priority="1" />
+      <Item value="private" priority="1" />
+      <Item value="ckbShowFilter" priority="2" />
+      <Item value="ModuleSettings" priority="0" />
+      <Item value="pnlMapFilters" priority="0" />
+      <Item value="using" priority="3" />
+      <Item value="DNNspot.Maps.DataModel" priority="0" />
+      <Item value="ES" priority="1" />
+      <Item value="static" priority="4" />
+      <Item value="countries" priority="1" />
+      <Item value="ddlCountries" priority="3" />
+      <Item value="protected" priority="0" />
+      <Item value="path" priority="2" />
+      <Item value="GetModuleFolderPath`0" priority="0" />
+      <Item value="InitializeEntitySpaces`0" priority="0" />
+      <Item value="request" priority="3" />
+      <Item value="moduleId" priority="9" />
+      <Item value="country" priority="5" />
+      <Item value="states" priority="2" />
+      <Item value="Queries`0" priority="3" />
+      <Item value="s" priority="4" />
+      <Item value="HttpModuleCollection`0" priority="0" />
+      <Item value="statesHtml" priority="0" />
+      <Item value="List" priority="3" />
+      <Item value="maxPoints`0" priority="0" />
+      <Item value="GetMarkersByCountry`0" priority="0" />
+      <Item value="city" priority="3" />
+      <Item value="DataModel" priority="1" />
+      <Item value="state" priority="3" />
+      <Item value="cities" priority="0" />
+      <Item value="chbLinkTitles" priority="0" />
+      <Item value="ckbLinkTitles" priority="0" />
+      <Item value="linkTitles" priority="0" />
+      <Item value="StringBuilder`0" priority="0" />
+      <Item value="titleReplace" priority="0" />
+      <Item value="Settings`0" priority="0" />
+      <Item value="TargetModuleId" priority="10" />
+      <Item value="ddlLinkAutoZoom" priority="1" />
+      <Item value="CreateCityHtml`0" priority="0" />
+      <Item value="CreateStatesHtml`0" priority="0" />
+      <Item value="linkEnd" priority="0" />
+      <Item value="ReplaceTokens`0" priority="0" />
+      <Item value="DataModel.ES" priority="0" />
+      <Item value="Double`0" priority="0" />
+      <Item value="markerCollection" priority="0" />
+      <Item value="objModules" priority="0" />
+      <Item value="settings" priority="0" />
+      <Item value="MarkerListing" priority="0" />
+      <Item value="txtCustomField" priority="10" />
+      <Item value="reader" priority="1" />
+      <Item value="customField" priority="8" />
+      <Item value="CustomField" priority="0" />
+      <Item value="ckbShowCustomFieldFilter" priority="2" />
+      <Item value="pnlCustomMapFilter" priority="0" />
+      <Item value="ddlCustomField" priority="4" />
+      <Item value="customFields" priority="1" />
+      <Item value="SharedMethods`0" priority="4" />
+      <Item value="citiesHtml" priority="0" />
+      <Item value="a" priority="0" />
+      <Item value="ListItem" priority="0" />
+      <Item value="GoogleGeocodeService`0" priority="0" />
+      <Item value="GeocodeService`0" priority="1" />
+      <Item value="geocodeService" priority="5" />
+      <Item value="geocodeRequest" priority="1" />
+      <Item value="WA" priority="0" />
+      <Item value="Geocoding" priority="0" />
+      <Item value="Google" priority="0" />
+      <Item value="GoogleGeocoderV3`0" priority="0" />
+      <Item value="IGeocodeResponse`0" priority="0" />
+      <Item value="IGeocodeService`0" priority="1" />
+      <Item value="address" priority="3" />
+      <Item value="GeocodeRequest" priority="0" />
+      <Item value="coordinates" priority="7" />
+      <Item value="Coordinates" priority="0" />
+      <Item value="TraceContextRecord`0" priority="0" />
+      <Item value="Coordinates`0" priority="1" />
+      <Item value="geocodeResult" priority="4" />
+      <Item value="txtAddress" priority="2" />
+      <Item value="txtMapLocation" priority="0" />
+      <Item value="ddlProximity" priority="2" />
+      <Item value="Search`0" priority="1" />
+      <Item value="SerializeMarkers`0" priority="0" />
+      <Item value="List&lt;Marker&gt;" priority="0" />
+      <Item value="ViewAbleMarker`0" priority="9" />
+      <Item value="conn" priority="0" />
+      <Item value="txtPriority" priority="4" />
+      <Item value="ddlCustomFilter" priority="5" />
+      <Item value="IsPostBack" priority="0" />
+      <Item value="ckbShowProximitySearch" priority="2" />
+      <Item value="txtSearchResultsTemplate" priority="2" />
+      <Item value="esColumnMetadata`0" priority="2" />
+      <Item value="EntitySpaces" priority="0" />
+      <Item value="Core" priority="0" />
+      <Item value="Interfaces" priority="0" />
+      <Item value="start" priority="1" />
+      <Item value="end" priority="0" />
+      <Item value="txtDirectionsLinkText" priority="2" />
+      <Item value="AccessViolationException`0" priority="0" />
+      <Item value="pnlSearchResultsListing" priority="1" />
+      <Item value="txtPhoneNumber" priority="2" />
+      <Item value="PhoneNumber" priority="0" />
+      <Item value="phoneNumber" priority="0" />
+      <Item value="proximity" priority="3" />
+      <Item value="Uri`0" priority="0" />
+      <Item value="UriBuilder" priority="0" />
+      <Item value="uri" priority="4" />
+      <Item value="postUrl" priority="0" />
+      <Item value="custom" priority="1" />
+      <Item value="Eval`0" priority="0" />
+      <Item value="IsSearch" priority="2" />
+      <Item value="jsonObject" priority="2" />
+      <Item value="latitude" priority="1" />
+      <Item value="longitude" priority="0" />
+      <Item value="GeocodeMarkerList`0" priority="0" />
+      <Item value="_markers" priority="0" />
+      <Item value="HidePointsOnPageLoad" priority="4" />
+      <Item value="void" priority="0" />
+      <Item value="LoadMarkers`0" priority="0" />
+      <Item value="ModuleConfiguration" priority="0" />
+      <Item value="folderName" priority="1" />
+      <Item value="litMap" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.Common.ModuleBase+ControlKeys">
+      <Item value="UploadMarkers" priority="0" />
+      <Item value="Default" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtility">
+      <Item value="MapPath`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="UrlReferrer" priority="1" />
+      <Item value="Url" priority="3" />
+      <Item value="Params" priority="11" />
+      <Item value="RawUrl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="ToString`0" priority="0" />
+      <Item value="AbsoluteUri" priority="1" />
+      <Item value="Host" priority="1" />
+      <Item value="Scheme" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="11" />
+      <Item value="IsNullOrEmpty`0" priority="24" />
+      <Item value="Format`0" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ES.MarkerQuery">
+      <Item value="Where`0" priority="16" />
+      <Item value="MarkerId" priority="1" />
+      <Item value="Latitude" priority="3" />
+      <Item value="Longitude" priority="2" />
+      <Item value="AndNot`0" priority="0" />
+      <Item value="Select`0" priority="2" />
+      <Item value="ModuleId" priority="4" />
+      <Item value="es" priority="6" />
+      <Item value="Country" priority="8" />
+      <Item value="OrderBy`0" priority="1" />
+      <Item value="Region" priority="7" />
+      <Item value="City" priority="4" />
+      <Item value="CustomField" priority="12" />
+      <Item value="OnLoadDelegate" priority="0" />
+      <Item value="es2" priority="0" />
+      <Item value="GroupBy`0" priority="0" />
+      <Item value="Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ES.MarkerCollection">
+      <Item value="Load`0" priority="3" />
+      <Item value="Count" priority="0" />
+      <Item value="ToList`1" priority="2" />
+      <Item value="Where`1" priority="0" />
+      <Item value="LoadByProximity`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="NaN" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Single">
+      <Item value="NaN" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EntitySpaces.DynamicQuery.esQueryItem">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Ascending" priority="6" />
+      <Item value="Distinct`0" priority="0" />
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="IsNull`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToString`0" priority="7" />
+      <Item value="ToInt32`0" priority="3" />
+      <Item value="ToBoolean`0" priority="4" />
+      <Item value="ToUInt32`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EntitySpaces.DynamicQuery.esDynamicQuerySerializable">
+      <Item value="Where`0" priority="0" />
+      <Item value="OrderBy`0" priority="1" />
+      <Item value="Or`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ES.Marker">
+      <Item value="Latitude" priority="4" />
+      <Item value="Longitude" priority="6" />
+      <Item value="IconShadowUrl" priority="1" />
+      <Item value="IconUrl" priority="1" />
+      <Item value="LoadByPrimaryKey`0" priority="2" />
+      <Item value="Save`0" priority="1" />
+      <Item value="MarkerId" priority="5" />
+      <Item value="AddNew`0" priority="1" />
+      <Item value="es" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="InfoWindowHtml" priority="0" />
+      <Item value="Address1" priority="0" />
+      <Item value="Address2" priority="0" />
+      <Item value="City" priority="4" />
+      <Item value="Region" priority="4" />
+      <Item value="PostalCode" priority="0" />
+      <Item value="Country" priority="3" />
+      <Item value="CustomField" priority="4" />
+      <Item value="Priority" priority="3" />
+      <Item value="ModuleId" priority="0" />
+      <Item value="PhoneNumber" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="3" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.Maps.GeocodeHandler">
+      <Item value="GetTopMarkerByModuleId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Panel">
+      <Item value="Visible" priority="3" />
+      <Item value="ClientID" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
+      <Item value="Text" priority="13" />
+      <Item value="ClientID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Button">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Newtonsoft.Json.JsonConvert">
+      <Item value="DeserializeObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.Maps.GeocodeResponse">
+      <Item value="latitude" priority="0" />
+      <Item value="longitude" priority="0" />
+      <Item value="message" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.CheckBox">
+      <Item value="Checked" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="1" />
+      <Item value="Replace`0" priority="6" />
+      <Item value="Distinct`1" priority="0" />
+      <Item value="IndexOf`0" priority="0" />
+      <Item value="LastIndexOf`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.MarkerListing.ModuleSettingNames">
+      <Item value="ListTemplate" priority="5" />
+      <Item value="TargetModule" priority="3" />
+      <Item value="LinkMapListing" priority="2" />
+      <Item value="LinkAutoZoom" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendFormat`0" priority="5" />
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Literal">
+      <Item value="Text" priority="8" />
+      <Item value="Visible" priority="0" />
+      <Item value="ClientID" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EntitySpaces.DynamicQuery.esDynamicQuerySerializable+DynamicQueryProps">
+      <Item value="Top" priority="4" />
+      <Item value="Distinct" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DotNetNuke.Entities.Modules.Actions.ModuleActionType">
+      <Item value="AddContent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WA.Geocoding.GeocodeResponse">
+      <Item value="Errors" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="ForEach`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.Maps.ModuleSettingNames">
+      <Item value="ShowMapFilter" priority="2" />
+      <Item value="AutoZoomLevel" priority="0" />
+      <Item value="CustomField" priority="3" />
+      <Item value="ShowCustomFieldFilter" priority="3" />
+      <Item value="Priority" priority="2" />
+      <Item value="ShowProximitySearch" priority="1" />
+      <Item value="SearchResultsTemplate" priority="2" />
+      <Item value="DirectionsLinkText" priority="2" />
+      <Item value="PhoneNumber" priority="2" />
+      <Item value="HideMapPointsOnPageLoad" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.DataModel.Queries">
+      <Item value="GetDistinctCountries`0" priority="0" />
+      <Item value="GetMarkersByCountry`0" priority="0" />
+      <Item value="GetDistinctCities`0" priority="0" />
+      <Item value="GetMarkersByState`0" priority="1" />
+      <Item value="GetMarkersByCity`0" priority="2" />
+      <Item value="GetDistinctStates`0" priority="2" />
+      <Item value="GetDistinctCustomFields`0" priority="1" />
+      <Item value="GetMarkersByCustomField`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.DropDownList">
+      <Item value="DataMember" priority="0" />
+      <Item value="DataSource" priority="1" />
+      <Item value="DataBind`0" priority="1" />
+      <Item value="DataValueField" priority="0" />
+      <Item value="ClientID" priority="0" />
+      <Item value="Items" priority="0" />
+      <Item value="SelectedValue" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ListItemCollection">
+      <Item value="Insert`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.Common.ModuleBase">
+      <Item value="ReplaceTokens`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetNuke.Entities.Modules.ModuleController">
+      <Item value="GetModuleSettings`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WA.FileHelpers.Csv.CsvReader">
+      <Item value="GetField`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetNuke.UI.UserControls.TextEditor">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WA.Geocoding.GeocodeService">
+      <Item value="SendGeocodeRequest`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WA.Geocoding.Google.GoogleGeocoderV3">
+      <Item value="Geocode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WA.Geocoding.IGeocodeResponse">
+      <Item value="Lat" priority="0" />
+      <Item value="Long" priority="0" />
+      <Item value="ErrorMessage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.Common.Coordinates">
+      <Item value="StatusMessage" priority="2" />
+      <Item value="GeocodeSuccess" priority="4" />
+      <Item value="Latitude" priority="2" />
+      <Item value="Longitude" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EntitySpaces.Interfaces.esConnectionElement">
+      <Item value="Schema" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EntitySpaces.Interfaces.esConfigSettings">
+      <Item value="Default" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Repeater">
+      <Item value="DataBind`0" priority="0" />
+      <Item value="DataSource" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.DataModel.ES.Marker">
+      <Item value="esStrings`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ViewAbleMarker">
+      <Item value="Priority" priority="0" />
+      <Item value="ModuleId" priority="0" />
+      <Item value="Latitude" priority="0" />
+      <Item value="Longitude" priority="0" />
+      <Item value="PhoneNumber" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Redirect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.UriBuilder">
+      <Item value="Query" priority="2" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DNNspot.Maps.DataModel.ES.MarkerCollection">
+      <Item value="LoadAll`0" priority="0" />
+      <Item value="LoadNotGeolocated`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DotNetNuke.Entities.Modules.ModuleInfo">
+      <Item value="FolderName" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,2 @@
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+ADD [CustomField] [varchar](max) NULL

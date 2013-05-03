@@ -1,0 +1,6 @@
+if NOT Exists(select * from sys.columns where Name = 'CustomField' and Object_ID = Object_ID('[{objectQualifier}DNNspot_Maps_Markers]'))
+
+begin
+	ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+	ADD [CustomField] [varchar](max) NULL
+end

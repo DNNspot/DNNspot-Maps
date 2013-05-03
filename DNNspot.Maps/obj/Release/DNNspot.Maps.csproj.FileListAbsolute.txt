@@ -1,0 +1,14 @@
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.pdb
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.EntitySpaces.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Licensing.ClientCommon.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.Common.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.DataModel.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\Newtonsoft.Json.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\WA.Geocoding.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\WA.Shared.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.Common.pdb
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\bin\DNNspot.Maps.DataModel.pdb
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\obj\Release\ResolveAssemblyReference.cache
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\obj\Release\DNNspot.Maps.dll
+C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps\obj\Release\DNNspot.Maps.pdb

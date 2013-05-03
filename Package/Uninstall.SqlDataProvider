@@ -1,0 +1,3 @@
+DROP TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers]
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}DNNspot_Find_By_Proximity]

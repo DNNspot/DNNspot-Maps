@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{441C75C5-E489-4F25-AEAD-F56455051CE0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DNNspot.Maps</RootNamespace>
+    <AssemblyName>DNNspot.Maps</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DNNspot.Newtonsoft.Json">
+      <HintPath>..\Lib\DNNspot.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\Lib\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntitySpaces.Core">
+      <HintPath>..\Lib\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DebuggerVisualizer">
+      <HintPath>..\Lib\EntitySpaces.DebuggerVisualizer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery">
+      <HintPath>..\Lib\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces">
+      <HintPath>..\Lib\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.LoaderMT">
+      <HintPath>..\Lib\EntitySpaces.LoaderMT.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider">
+      <HintPath>..\Lib\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="WA.Geocoding">
+      <HintPath>..\Lib\WA.Geocoding.dll</HintPath>
+    </Reference>
+    <Reference Include="WA.Shared">
+      <HintPath>..\Lib\WA.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapLocation\Default.ascx.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapLocation\Default.ascx.designer.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MapLocation\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapLocation\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\GeocodeResponse.cs" />
+    <Compile Include="Maps\Default.ascx.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\Default.ascx.designer.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\EditMarker.ascx.cs">
+      <DependentUpon>EditMarker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\EditMarker.ascx.designer.cs">
+      <DependentUpon>EditMarker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\GeocodeHandler.ashx.cs">
+      <DependentUpon>GeocodeHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\SharedMethods.cs" />
+    <Compile Include="Maps\ListMarkers.ascx.cs">
+      <DependentUpon>ListMarkers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\ListMarkers.ascx.designer.cs">
+      <DependentUpon>ListMarkers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\CitiesChange.ashx.cs">
+      <DependentUpon>CitiesChange.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\CountriesChange.ashx.cs">
+      <DependentUpon>CountriesChange.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\CustomFieldChange.ashx.cs">
+      <DependentUpon>CustomFieldChange.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\GetMarkersTemplate.ashx.cs">
+      <DependentUpon>GetMarkersTemplate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\PointSelected.ashx.cs">
+      <DependentUpon>PointSelected.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Services\StatesChange.ashx.cs">
+      <DependentUpon>StatesChange.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\UploadMarkers.ascx.cs">
+      <DependentUpon>UploadMarkers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps\UploadMarkers.ascx.designer.cs">
+      <DependentUpon>UploadMarkers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MarkerListing\Default.ascx.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarkerListing\Default.ascx.designer.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MarkerListing\DnnHelper.cs" />
+    <Compile Include="MarkerListing\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarkerListing\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MapLocation\Default.ascx" />
+    <Content Include="MapLocation\Settings.ascx" />
+    <Content Include="Maps\Default.ascx" />
+    <Content Include="Maps\EditMarker.ascx" />
+    <Content Include="Maps\Geocode.html" />
+    <Content Include="Maps\ListMarkers.ascx" />
+    <Content Include="Maps\Settings.ascx" />
+    <Content Include="Maps\UploadMarkers.ascx" />
+    <Content Include="MarkerListing\Default.ascx" />
+    <Content Include="MarkerListing\Settings.ascx" />
+    <Content Include="Module.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DNNspot.Maps.Common\DNNspot.Maps.Common.csproj">
+      <Project>{008C7EA2-9F02-49AF-B6A8-3949B1AC4C97}</Project>
+      <Name>DNNspot.Maps.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNNspot.Maps.DataModel\DNNspot.Maps.DataModel.csproj">
+      <Project>{B083AD9D-8926-4E3D-9FD7-E94E77991A99}</Project>
+      <Name>DNNspot.Maps.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\GeocodeHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\CountriesChange.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\StatesChange.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\CitiesChange.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\PointSelected.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\GetMarkersTemplate.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\Services\CustomFieldChange.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1040</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <ModuleFolder>DNNspot-Maps</ModuleFolder>
+    <DNNDirectory>C:\inetpub\wwwroot\DNN7</DNNDirectory>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="AfterBuild" DependsOnTargets="DeployModule">
+  </Target>
+  <Target Name="DeployModule">
+    <!--  
+         We use CreateItem to ensure we pickup dynamic content 
+        that may be generated during the build task -->
+    <CreateItem Include="$(MSBuildProjectDirectory)\$(OutputPath)\*.dll">
+      <Output TaskParameter="Include" ItemName="ModuleAssemblies" />
+    </CreateItem>
+    <CreateItem Include="$(MSBuildProjectDirectory)\$(OutputPath)\*.pdb">
+      <Output TaskParameter="Include" ItemName="ModuleDebug" />
+    </CreateItem>
+    <!-- We copy all the project content files to our website directories. -->
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content -> '$(DNNDirectory)\DesktopModules\$(ModuleFolder)\%(Identity)')" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(ModuleAssemblies);@(ModuleDebug)" DestinationFolder="$(DNNDirectory)\bin" />
+  </Target>
+</Project>

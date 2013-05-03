@@ -1,0 +1,113 @@
+﻿.containSolution,
+.containCountry,
+.containRegion,
+.containCity
+{
+    float:left;
+    margin:0px 10px 0px 0px;
+}
+
+.mapsModule
+{
+    clear:both;
+}
+
+.distance input
+{
+	border:1px solid #ccc;
+	font-size:13px;
+	margin:0px 10px 10px 0px;
+	padding:5px;
+	width:300px;
+}
+
+.noMatches
+{
+	clear:both;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  color: #B94A48;
+
+  border-radius: 4px 4px 4px 4px;
+
+  margin-bottom: 5px;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.proximity select,
+.customFilter select
+{
+	padding:5px;
+}
+
+.distance
+{
+	float:left;
+}
+
+.proximity
+{
+	float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.customFilter
+{
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.searchBtn
+{
+	float:left;
+}
+
+.searchBtn input
+{
+	margin:16px 0px 0px 10px;
+}
+
+.priorityzzzz
+{
+	border:1px solid #ccc;
+	margin:10px 0px;
+	padding:0px 10px 10px 10px;
+}
+
+
+
+.error
+{
+	font-style: italic;
+	color: #00FFFF;
+	font-weight: bold;
+}
+
+table.TabularData
+{
+	border: 1px solid #666666;
+}
+
+table.TabularData tr th
+{
+	background: #888888;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+table.TabularData tr td
+{
+	background: #FFFFFF;
+	padding: 5px;
+}
+
+table.TabularData tr.TableRowAlt td
+{
+	background: #EEEEEE;
+}
+
+.ModuleTitle_SubMenu
+{
+	z-index: 1000;
+}
