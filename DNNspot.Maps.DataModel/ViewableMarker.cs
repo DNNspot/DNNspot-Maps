@@ -35,6 +35,7 @@ namespace DNNspot.Maps.DataModel
     {
         public string InfoWindowHtml { get; set; }
 
+        public int MarkerId { get; set; }
         public int ModuleId { get; set; }
 
         public string Address1 { get; set; }
@@ -59,7 +60,9 @@ namespace DNNspot.Maps.DataModel
 
         public ViewAbleMarker() { }
 
-        public ViewAbleMarker(Marker marker) {
+        public ViewAbleMarker(Marker marker)
+        {
+            MarkerId = marker.MarkerId.Value;
             Address1 = marker.Address1;
             Address2 = marker.Address2;
             City = marker.City;

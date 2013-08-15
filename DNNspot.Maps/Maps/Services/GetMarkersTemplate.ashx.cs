@@ -61,7 +61,7 @@ namespace DNNspot.Maps.Maps.Services
             var moduleId = Convert.ToInt32(request.Params["moduleId"]);
             var targetModuleId = Convert.ToInt32(request.Params["targetModuleId"]);
 
-            var markerCollection = Queries.GetMarkersByState(targetModuleId, customField, country, state, maxPoints);
+            var markerCollection = Queries.GetMarkersByState(targetModuleId, customField, country, state, maxPoints, null);
 
             var markers = new List<ViewAbleMarker>();
             markerCollection.ToList().ForEach(marker => markers.Add(new ViewAbleMarker(marker)));
@@ -69,7 +69,7 @@ namespace DNNspot.Maps.Maps.Services
             DotNetNuke.Entities.Modules.ModuleController objModules = new DotNetNuke.Entities.Modules.ModuleController();
             var settings = objModules.GetModuleSettings(moduleId);
             var template = Convert.ToString(settings[DNNspot.Maps.MarkerListing.ModuleSettingNames.ListTemplate]);
-            var markerHtml = DNNspot.Maps.Common.ModuleBase.ReplaceTokens(markerCollection, template);
+            var markerHtml = DNNspot.Maps.Common.ModuleBase.ReplaceTokens(markerCollection, template, moduleId);
 
             var jsonObject = new { message = String.Empty, success = true, markerHtml = markerHtml.ToString() };
 

@@ -55,7 +55,7 @@ namespace DNNspot.Maps.Common
             public const string Default = "";
         }
 
-        public static StringBuilder ReplaceTokens(IEnumerable<Marker> markers, string template)
+        public static StringBuilder ReplaceTokens(IEnumerable<Marker> markers, string template, int moduleId)
         {
             StringBuilder html = new StringBuilder();
 
@@ -69,7 +69,7 @@ namespace DNNspot.Maps.Common
 
                 if (marker.Longitude != null && marker.Latitude != null)
                 {
-                    linkStart = String.Format(@"<a onclick=""SelectPoint('{0}', '{1}', '{2}', '{3}', '{4}')"" href=""javascript:void(0);"">", marker.Latitude, marker.Longitude, marker.Country, marker.Region, marker.City);
+                    linkStart = String.Format(@"<a onclick=""selectPoint_{5}('{0}', '{1}', '{2}', '{3}', '{4}', '{6}')"" href=""javascript:void(0);"">", marker.Latitude, marker.Longitude, marker.Country, marker.Region, marker.City, moduleId, marker.MarkerId);
                     linkEnd = String.Format(@"</a>");
                 }
 
@@ -98,7 +98,7 @@ namespace DNNspot.Maps.Common
             return html;
         }
 
-        public static StringBuilder ReplaceTokens(IEnumerable<ViewAbleMarker> markers, string template)
+        public static StringBuilder ReplaceTokens(IEnumerable<ViewAbleMarker> markers, string template, int moduleId)
         {
             StringBuilder html = new StringBuilder();
 
@@ -112,7 +112,7 @@ namespace DNNspot.Maps.Common
 
                 if (marker.Longitude != null && marker.Latitude != null)
                 {
-                    linkStart = String.Format(@"<a onclick=""SelectPoint('{0}', '{1}', '{2}', '{3}', '{4}')"" href=""javascript:void(0);"">", marker.Latitude, marker.Longitude, marker.Country, marker.Region, marker.City);
+                    linkStart = String.Format(@"<a onclick=""selectPoint_{5}('{0}', '{1}', '{2}', '{3}', '{4}', '{6}')"" href=""javascript:void(0);"">", marker.Latitude, marker.Longitude, marker.Country, marker.Region, marker.City, moduleId, marker.MarkerId);
                     linkEnd = String.Format(@"</a>");
                 }
 

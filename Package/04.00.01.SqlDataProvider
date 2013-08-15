@@ -1,0 +1,3 @@
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers] 
+ADD  CONSTRAINT [DF_DNNspot_Maps_Markers_CustomField]  DEFAULT ('') FOR [CustomField]

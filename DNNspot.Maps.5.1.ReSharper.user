@@ -8,59 +8,30 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14854" fromTop="31" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx" caret="483" fromTop="8" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx.cs" caret="886" fromTop="21" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Settings.ascx.cs" caret="886" fromTop="21" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CitiesChange.ashx.cs" caret="884" fromTop="20" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CountriesChange.ashx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CustomFieldChange.ashx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:EditMarker.ascx" caret="242" fromTop="3" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:EditMarker.ascx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeHandler.ashx.cs" caret="886" fromTop="21" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeResponse.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="880" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:DnnHelper.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Parser.cs" caret="884" fromTop="20" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:DnnHelper.cs" caret="884" fromTop="20" />
-      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="884" fromTop="20" />
-      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="884" fromTop="20" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9766" fromTop="24" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="9943" fromTop="27" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/d:ES/d:Custom/f:MarkerCollection.cs" caret="1088" fromTop="30" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="3007" fromTop="34" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="2710" fromTop="28" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="5900" fromTop="30" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="2199" fromTop="13" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="53" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="2294" fromTop="16" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9481" fromTop="25" />
     </RecentFiles>
     <RecentEdits>
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeResponse.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Settings.ascx.cs" caret="882" fromTop="19" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:SharedMethods.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="880" fromTop="18" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:DnnHelper.cs" caret="884" fromTop="20" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="1112" fromTop="10" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="0" fromTop="0" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="6576" fromTop="7" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="6624" fromTop="7" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Parser.cs" caret="884" fromTop="20" />
@@ -70,6 +41,21 @@
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="884" fromTop="20" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="0" fromTop="0" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="884" fromTop="20" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="4754" fromTop="38" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="6748" fromTop="45" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14623" fromTop="15" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14965" fromTop="19" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="5874" fromTop="28" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="2656" fromTop="28" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="2710" fromTop="28" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="3111" fromTop="28" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="6547" fromTop="52" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="2199" fromTop="13" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="1561" fromTop="26" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="53" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="5219" fromTop="26" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="3034" fromTop="31" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9481" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -87,7 +73,7 @@
     <ItemStatistics item="Default">
       <Item value="ModuleSettingNames`0" priority="11" />
       <Item value="ControlKeys`0" priority="0" />
-      <Item value="public" priority="17" />
+      <Item value="public" priority="18" />
       <Item value="const" priority="4" />
       <Item value="string" priority="38" />
       <Item value="ParseCsvFile`0" priority="0" />
@@ -97,14 +83,14 @@
       <Item value="Response" priority="2" />
       <Item value="Request" priority="11" />
       <Item value="litMessage" priority="2" />
-      <Item value="return" priority="3" />
+      <Item value="return" priority="4" />
       <Item value="status" priority="2" />
-      <Item value="MarkerCollection`0" priority="13" />
-      <Item value="new" priority="28" />
-      <Item value="MarkerCollection" priority="4" />
-      <Item value="MarkerQuery`0" priority="4" />
-      <Item value="MarkerQuery" priority="4" />
-      <Item value="q" priority="68" />
+      <Item value="MarkerCollection`0" priority="14" />
+      <Item value="new" priority="30" />
+      <Item value="MarkerCollection" priority="5" />
+      <Item value="MarkerQuery`0" priority="5" />
+      <Item value="MarkerQuery" priority="5" />
+      <Item value="q" priority="72" />
       <Item value="ModuleId" priority="15" />
       <Item value="String`0" priority="34" />
       <Item value="markers" priority="12" />
@@ -113,8 +99,8 @@
       <Item value="foreach" priority="2" />
       <Item value="Marker`0" priority="10" />
       <Item value="in" priority="2" />
-      <Item value="if" priority="45" />
-      <Item value="marker" priority="43" />
+      <Item value="if" priority="46" />
+      <Item value="marker" priority="46" />
       <Item value="DNNspot" priority="6" />
       <Item value="Maps" priority="11" />
       <Item value="GeocodeHandler`0" priority="0" />
@@ -129,7 +115,7 @@
       <Item value="Marker" priority="7" />
       <Item value="btnDelete" priority="0" />
       <Item value="ModuleWebPath" priority="1" />
-      <Item value="markerId" priority="0" />
+      <Item value="markerId" priority="5" />
       <Item value="lblMessage" priority="1" />
       <Item value="xmlResponse" priority="1" />
       <Item value="deserialized" priority="4" />
@@ -150,11 +136,11 @@
       <Item value="template" priority="4" />
       <Item value="tempHtml" priority="16" />
       <Item value="targetModule" priority="0" />
-      <Item value="int" priority="11" />
+      <Item value="int" priority="13" />
       <Item value="ddlModuleToUse" priority="2" />
       <Item value="isTrial" priority="9" />
       <Item value="markerQuery" priority="1" />
-      <Item value="maxPoints" priority="13" />
+      <Item value="maxPoints" priority="15" />
       <Item value="ModuleBase`0" priority="2" />
       <Item value="controlPath" priority="0" />
       <Item value="message" priority="0" />
@@ -172,7 +158,7 @@
       <Item value="using" priority="3" />
       <Item value="DNNspot.Maps.DataModel" priority="0" />
       <Item value="ES" priority="1" />
-      <Item value="static" priority="4" />
+      <Item value="static" priority="5" />
       <Item value="countries" priority="1" />
       <Item value="ddlCountries" priority="3" />
       <Item value="protected" priority="0" />
@@ -285,6 +271,12 @@
       <Item value="ModuleConfiguration" priority="0" />
       <Item value="folderName" priority="1" />
       <Item value="litMap" priority="0" />
+      <Item value="pnlNoMatches" priority="0" />
+      <Item value="litError" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="MarkerMetadata`0" priority="0" />
+      <Item value="mc" priority="1" />
+      <Item value="Id" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DNNspot.Maps.Common.ModuleBase+ControlKeys">
       <Item value="UploadMarkers" priority="0" />
@@ -314,14 +306,14 @@
       <Item value="Format`0" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ES.MarkerQuery">
-      <Item value="Where`0" priority="16" />
-      <Item value="MarkerId" priority="1" />
+      <Item value="Where`0" priority="18" />
+      <Item value="MarkerId" priority="3" />
       <Item value="Latitude" priority="3" />
       <Item value="Longitude" priority="2" />
       <Item value="AndNot`0" priority="0" />
       <Item value="Select`0" priority="2" />
       <Item value="ModuleId" priority="4" />
-      <Item value="es" priority="6" />
+      <Item value="es" priority="7" />
       <Item value="Country" priority="8" />
       <Item value="OrderBy`0" priority="1" />
       <Item value="Region" priority="7" />
@@ -333,7 +325,7 @@
       <Item value="Title" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:DNNspot.Maps.DataModel.ES.MarkerCollection">
-      <Item value="Load`0" priority="3" />
+      <Item value="Load`0" priority="4" />
       <Item value="Count" priority="0" />
       <Item value="ToList`1" priority="2" />
       <Item value="Where`1" priority="0" />
@@ -370,7 +362,7 @@
       <Item value="IconUrl" priority="1" />
       <Item value="LoadByPrimaryKey`0" priority="2" />
       <Item value="Save`0" priority="1" />
-      <Item value="MarkerId" priority="5" />
+      <Item value="MarkerId" priority="7" />
       <Item value="AddNew`0" priority="1" />
       <Item value="es" priority="0" />
       <Item value="Title" priority="0" />
@@ -389,7 +381,7 @@
     <ItemStatistics item="Qualified:System.Nullable`1">
       <Item value="HasValue" priority="3" />
       <Item value="ToString`0" priority="1" />
-      <Item value="Value" priority="1" />
+      <Item value="Value" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DNNspot.Maps.Maps.GeocodeHandler">
       <Item value="GetTopMarkerByModuleId`0" priority="0" />
@@ -440,12 +432,12 @@
       <Item value="ToString`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.Literal">
-      <Item value="Text" priority="8" />
+      <Item value="Text" priority="9" />
       <Item value="Visible" priority="0" />
       <Item value="ClientID" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:EntitySpaces.DynamicQuery.esDynamicQuerySerializable+DynamicQueryProps">
-      <Item value="Top" priority="4" />
+      <Item value="Top" priority="5" />
       <Item value="Distinct" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DotNetNuke.Entities.Modules.Actions.ModuleActionType">
@@ -551,6 +543,7 @@
       <Item value="Latitude" priority="0" />
       <Item value="Longitude" priority="0" />
       <Item value="PhoneNumber" priority="0" />
+      <Item value="MarkerId" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpResponse">
       <Item value="Redirect`0" priority="0" />

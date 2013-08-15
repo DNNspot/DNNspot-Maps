@@ -53,6 +53,7 @@ namespace DNNspot.Maps.Maps.Services
             context.Response.ContentType = "application/json";
 
             int maxPoints = Convert.ToInt32(request.Params["maxPoints"]);
+            int? markerId = Convert.ToInt32(request.Params["markerId"]);
 
 
             var customField = request.Params["customField"];
@@ -67,7 +68,7 @@ namespace DNNspot.Maps.Maps.Services
             var cities = Queries.GetDistinctCities(targetModuleId, customField, country, state, maxPoints);
             var citiesHtml = SharedMethods.CreateCityHtml(cities);
             var statesHtml = SharedMethods.CreateStatesHtml(states);
-            var markerCollection = Queries.GetMarkersByState(targetModuleId, customField, country, state, maxPoints);
+            var markerCollection = Queries.GetMarkersByState(targetModuleId, customField, country, state, maxPoints, markerId);
 
             var markers = new List<ViewAbleMarker>();
             markerCollection.ToList().ForEach(marker => markers.Add(new ViewAbleMarker(marker)));
@@ -75,7 +76,7 @@ namespace DNNspot.Maps.Maps.Services
             DotNetNuke.Entities.Modules.ModuleController objModules = new DotNetNuke.Entities.Modules.ModuleController();
             var settings = objModules.GetModuleSettings(moduleId);
             var template = Convert.ToString(settings[DNNspot.Maps.MarkerListing.ModuleSettingNames.ListTemplate]);
-            var markerHtml = DNNspot.Maps.Common.ModuleBase.ReplaceTokens(markerCollection, template);
+            var markerHtml = DNNspot.Maps.Common.ModuleBase.ReplaceTokens(markerCollection, template, moduleId);
 
             var jsonObject = new { cities = citiesHtml, states = statesHtml,  message = String.Empty, success = true, markers, markerHtml = markerHtml.ToString() };
 

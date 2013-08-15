@@ -12,3 +12,17 @@ C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Debug\EntitySpac
 C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.Interfaces.dll
 C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.LoaderMT.dll
 C:\Code\DNNspot-Maps\trunk\DNNspot.Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.SqlClientProvider.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\DNNspot.Maps.Common.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\DNNspot.Maps.Common.pdb
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\DNNspot.Maps.DataModel.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.Core.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.DebuggerVisualizer.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.DynamicQuery.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.Interfaces.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.LoaderMT.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.SqlClientProvider.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\WA.Shared.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\DNNspot.Maps.DataModel.pdb
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\DNNspot.Maps.Common.dll
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\DNNspot.Maps.Common.pdb

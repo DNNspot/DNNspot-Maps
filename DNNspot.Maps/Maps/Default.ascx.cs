@@ -71,6 +71,7 @@ namespace DNNspot.Maps.Maps
             }
         }
 
+        public string TargetModuleId;
         public int maxPoints = 0;
         protected string MapLocation = null;
         protected string MapZoom = null;
@@ -119,6 +120,7 @@ namespace DNNspot.Maps.Maps
 
             if (HidePointsOnPageLoad)
             {
+                maxPoints = 0;
                 markerQuery.es.Top = maxPoints;
             }
 
@@ -141,6 +143,7 @@ namespace DNNspot.Maps.Maps
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            TargetModuleId = ModuleId.ToString();
             if(Settings[ModuleSettingNames.HideMapPointsOnPageLoad] != null)
             {
                 HidePointsOnPageLoad = Convert.ToBoolean(Settings[ModuleSettingNames.HideMapPointsOnPageLoad]);
@@ -278,14 +281,23 @@ namespace DNNspot.Maps.Maps
                 {
                     string template = Convert.ToString(Settings[ModuleSettingNames.SearchResultsTemplate]);
 
-                    litSearchResults.Text = ReplaceTokens(markers, template).ToString();
+                    litSearchResults.Text = ReplaceTokens(markers, template, ModuleId).ToString();
+                }
+
+                if (markers.Count == 0)
+                {
+                    LoadMembers();
+                    LoadControls();
+                    litError.Text = "We currently do not have any locations that match your criteria";
+                    pnlNoMatches.Visible = true;
+                    litMarkers.Text = LoadMarkers();
                 }
             }
-
-            if (markers.Count == 0)
+            else
             {
                 LoadMembers();
                 LoadControls();
+                litError.Text = "Unable to geocode address";
                 pnlNoMatches.Visible = true;
                 litMarkers.Text = LoadMarkers();
             }

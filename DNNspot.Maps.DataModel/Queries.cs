@@ -168,7 +168,7 @@ namespace DNNspot.Maps.DataModel
             return markers;
         }
 
-        public static MarkerCollection GetMarkersByState(int moduleId, string customField, string country, string state, int maxPoints)
+        public static MarkerCollection GetMarkersByState(int moduleId, string customField, string country, string state, int maxPoints, int? markerId)
         {
             MarkerCollection markers = new MarkerCollection();
             MarkerQuery q = new MarkerQuery();
@@ -189,6 +189,13 @@ namespace DNNspot.Maps.DataModel
             {
                 q.Where(q.Region == state);
             }
+
+            if(markerId != null)
+            {
+                q.Where(q.MarkerId == markerId.Value);
+            }
+
+            q.es.Top = maxPoints;
 
             q.Where(q.Latitude.IsNotNull() && q.Longitude.IsNotNull());
 

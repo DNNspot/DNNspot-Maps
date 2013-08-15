@@ -61,7 +61,7 @@ namespace DNNspot.Maps.Maps.Services
 
             var cities = Queries.GetDistinctCities(moduleId, customField, country, state, maxPoints);
             var citiesHtml = SharedMethods.CreateCityHtml(cities);
-            var markerCollection = Queries.GetMarkersByState(moduleId, customField, country, state, maxPoints);
+            var markerCollection = Queries.GetMarkersByState(moduleId, customField, country, state, maxPoints, null);
 
             var markers = new List<ViewAbleMarker>();
             markerCollection.ToList().ForEach(marker => markers.Add(new ViewAbleMarker(marker)));

@@ -59,7 +59,7 @@ namespace DNNspot.Maps.Maps {
             rblMapPositioning.Items.FindByValue(Convert.ToString(ModuleSettings[ModuleSettingNames.MapPositioning] ?? "0")).Selected = true;
             txtMapAddress.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.MapAddress]);
             txtMapLatitude.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.MapLatitude]);
-            txtCustomField.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.MapLatitude]);
+            txtCustomFieldLabel.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.CustomFieldLabel]);
             txtMapLongitude.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.MapLongitude]);
             txtPhoneNumber.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.PhoneNumber]);
             ddlMapZoom.Items.FindByValue(Convert.ToString(ModuleSettings[ModuleSettingNames.MapZoom] ?? "10")).Selected = true;

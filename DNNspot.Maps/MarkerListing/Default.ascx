@@ -6,36 +6,6 @@
 </div>
 <asp:Panel ID="pnlGoToListing">
     <script type="text/javascript">
-        function SelectPoint(lat, long, country, state, city) {
-                
-            var baseServiceUrl = "<%= GetModuleFolderPath() %>Maps/Services";
-            var postUrl = baseServiceUrl + "/PointSelected.ashx";
-            var postVars = { 'targetModuleId': moduleId, 'country': country, 'state': state, 'city': city, 'isTrial': isTrial, 'maxPoints': maxPoints, 'moduleId': '<%= ModuleId.ToString() %>' };
-            jQuery.post(postUrl, postVars, function (data) {
-                if (data.success) {
-                    jQuery("#states<%= TargetModuleId %>").html(data.states);
-                    jQuery("#cities<%= TargetModuleId %>").html(data.cities);
-                    jQuery("#mapFilter<%= TargetModuleId %> select.countries").val(country);
-                    jQuery("#states<%= TargetModuleId %>").val(state);
-                    jQuery("#cities<%= TargetModuleId %>").val(city);
-
-                    jQuery("#states<%= TargetModuleId %>").show();
-                    jQuery("#cities<%= TargetModuleId %>").show();
-
-                    jQuery("#listingMarkers<%= ModuleId %>").html(data.markerHtml);                    
-
-                    if(data.states.length > 0)
-                    {                                     
-                        initialize_<%= TargetModuleId %>(data.markers);
-                        map_<%= TargetModuleId %>.setCenter(new google.maps.LatLng(lat, long));
-                        map_<%= TargetModuleId %>.setZoom(<%= Settings[ModuleSettingNames.LinkAutoZoom] ?? "10" %>);                                                                               
-                    }
-                }
-            });
-        }
-
-
-
        jQuery("#mapFilter<%= TargetModuleId %> .countries").change(function () {
             var postUrl = baseServiceUrl + "/GetMarkersTemplate.ashx";
             var country = jQuery(this).val();

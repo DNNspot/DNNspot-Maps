@@ -56,7 +56,7 @@ namespace DNNspot.Maps.MarkerListing
 
                 IEnumerable<Marker> markers = GetModuleMarkers(moduleId);
 
-                html = ReplaceTokens(markers, template);
+                html = ReplaceTokens(markers, template, moduleId);
             }
             else
             {
