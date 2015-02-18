@@ -31,6 +31,6 @@ C:\Code\DNNspot-Maps\DNNspot.Maps\bin\WA.Geocoding.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps\bin\WA.Shared.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps\bin\DNNspot.Maps.Common.pdb
 C:\Code\DNNspot-Maps\DNNspot.Maps\bin\DNNspot.Maps.DataModel.pdb
-C:\Code\DNNspot-Maps\DNNspot.Maps\obj\Debug\ResolveAssemblyReference.cache
 C:\Code\DNNspot-Maps\DNNspot.Maps\obj\Debug\DNNspot.Maps.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps\obj\Debug\DNNspot.Maps.pdb
+C:\Code\DNNspot-Maps\DNNspot.Maps\obj\Debug\DNNspot.Maps.csprojResolveAssemblyReference.cache

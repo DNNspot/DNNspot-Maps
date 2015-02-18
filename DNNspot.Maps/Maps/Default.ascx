@@ -7,7 +7,7 @@
     var maxPoints = '<%= maxPoints %>';
 </script>
 <asp:Panel ID="pnlCustomSearchFilter" runat="server" Visible="true">
-    <div class="distance">Address:<br /><asp:TextBox ID="txtAddress" runat="server"></asp:TextBox></div>
+    <div class="distance">Starting Address:<br /><asp:TextBox ID="txtAddress" runat="server"></asp:TextBox></div>
     <div class="customFilter"><%= CustomFieldLabel %>:<br /><asp:DropDownList ID="ddlCustomFilter" runat="server"></asp:DropDownList></div>
     <div class="proximity">Distance:<br />
         <asp:DropDownList ID="ddlProximity" runat="server">
@@ -252,7 +252,7 @@
             mapLatLngBounds_<%= ModuleId %>.extend(markerLatLng);
 
             mapMarkers_<%= ModuleId %>[i].infoWindow = new google.maps.InfoWindow({
-                content: marker.InfoWindowHtml
+                content: '<div class=\'dnnspotMapsInfoWindow\'>' + marker.InfoWindowHtml + '</div>'
             });
 
             mapMarkers_<%= ModuleId %>[i].marker = new google.maps.Marker({

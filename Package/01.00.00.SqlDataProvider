@@ -1,4 +1,4 @@
-CREATE TABLE [{objectQualifier}DNNspot_Maps_Markers](
+CREATE TABLE {databaseOwner}[{objectQualifier}DNNspot_Maps_Markers](
 	[MarkerId] [int] IDENTITY(1,1) NOT NULL,
 	[ModuleId] [int] NULL,
 	[Title] [nvarchar](50) NULL,

@@ -2,7 +2,7 @@
 <div class="searchForm">
     Enter your address to see a map of locations near you.
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
-    <span class="line">Address:
+    <span class="line">Starting Address:
         <asp:TextBox ID="txtAddress" runat="server" CssClass="txtAddress"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="error"
             ControlToValidate="txtAddress" Display="None" ErrorMessage="Please enter your address"></asp:RequiredFieldValidator>

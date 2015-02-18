@@ -104,6 +104,16 @@ namespace DNNspot.Maps.Maps
                 ddlCustomField.Items.Insert(0, new ListItem("Filter by:", ""));
             }
 
+            if (Convert.ToBoolean(Settings[ModuleSettingNames.ShowProximitySearch]))
+            {
+                pnlCustomSearchFilter.Visible = true;
+            }
+            else
+            {
+                pnlCustomSearchFilter.Visible = false;
+            }
+
+
             ddlCustomFilter.DataSource = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
             ddlCustomFilter.DataValueField = "CustomField";
             ddlCustomFilter.DataBind();

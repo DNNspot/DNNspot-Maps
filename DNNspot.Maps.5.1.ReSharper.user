@@ -8,25 +8,22 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Parser.cs" caret="884" fromTop="20" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:DnnHelper.cs" caret="884" fromTop="20" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9766" fromTop="24" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="9943" fromTop="27" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/d:ES/d:Custom/f:MarkerCollection.cs" caret="1088" fromTop="30" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="3007" fromTop="34" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="2710" fromTop="28" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="5900" fromTop="30" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="2199" fromTop="13" />
-      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="53" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="2294" fromTop="16" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9481" fromTop="25" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="1640" fromTop="34" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="9855" fromTop="16" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="8" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="314" fromTop="4" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="966" fromTop="14" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="10857" fromTop="24" />
     </RecentFiles>
     <RecentEdits>
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
@@ -41,21 +38,16 @@
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="884" fromTop="20" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="0" fromTop="0" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="884" fromTop="20" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="4754" fromTop="38" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="6748" fromTop="45" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14623" fromTop="15" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="14965" fromTop="19" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="5874" fromTop="28" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:GetMarkersTemplate.ashx.cs" caret="2656" fromTop="28" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:StatesChange.ashx.cs" caret="2710" fromTop="28" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="3111" fromTop="28" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="6547" fromTop="52" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:PointSelected.ashx.cs" caret="2199" fromTop="13" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="1561" fromTop="26" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="53" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="5219" fromTop="26" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="3034" fromTop="31" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9481" fromTop="25" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="504" fromTop="9" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="314" fromTop="4" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="12474" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -80,8 +72,8 @@
       <Item value="Server" priority="1" />
       <Item value="File`0" priority="0" />
       <Item value="HttpContext`0" priority="0" />
-      <Item value="Response" priority="2" />
-      <Item value="Request" priority="11" />
+      <Item value="Response" priority="3" />
+      <Item value="Request" priority="12" />
       <Item value="litMessage" priority="2" />
       <Item value="return" priority="4" />
       <Item value="status" priority="2" />
@@ -290,12 +282,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequest">
       <Item value="UrlReferrer" priority="1" />
-      <Item value="Url" priority="3" />
+      <Item value="Url" priority="4" />
       <Item value="Params" priority="11" />
       <Item value="RawUrl" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Uri">
-      <Item value="ToString`0" priority="0" />
+      <Item value="ToString`0" priority="1" />
       <Item value="AbsoluteUri" priority="1" />
       <Item value="Host" priority="1" />
       <Item value="Scheme" priority="0" />
@@ -546,7 +538,7 @@
       <Item value="MarkerId" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpResponse">
-      <Item value="Redirect`0" priority="0" />
+      <Item value="Redirect`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.UriBuilder">
       <Item value="Query" priority="2" />

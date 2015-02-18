@@ -17,6 +17,6 @@ C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\bin\Debug\EntitySpaces.DynamicQuery.
 C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\bin\Debug\EntitySpaces.Interfaces.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\bin\Debug\EntitySpaces.LoaderMT.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\bin\Debug\EntitySpaces.SqlClientProvider.dll
-C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\obj\Debug\ResolveAssemblyReference.cache
 C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\obj\Debug\DNNspot.Maps.DataModel.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\obj\Debug\DNNspot.Maps.DataModel.pdb
+C:\Code\DNNspot-Maps\DNNspot.Maps.DataModel\obj\Debug\DNNspot.Maps.DataModel.csprojResolveAssemblyReference.cache

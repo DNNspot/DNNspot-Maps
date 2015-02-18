@@ -238,7 +238,7 @@
   </ProjectExtensions>
   <PropertyGroup>
     <ModuleFolder>DNNspot-Maps</ModuleFolder>
-    <DNNDirectory>C:\inetpub\wwwroot\AFCU_DNN</DNNDirectory>
+    <DNNDirectory>C:\inetpub\wwwroot\DNN7</DNNDirectory>
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>

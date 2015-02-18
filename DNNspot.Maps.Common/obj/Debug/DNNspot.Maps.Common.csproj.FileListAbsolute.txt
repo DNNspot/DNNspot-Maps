@@ -23,6 +23,6 @@ C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.LoaderMT.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\EntitySpaces.SqlClientProvider.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\WA.Shared.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.Common\bin\Debug\DNNspot.Maps.DataModel.pdb
-C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\ResolveAssemblyReference.cache
 C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\DNNspot.Maps.Common.dll
 C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\DNNspot.Maps.Common.pdb
+C:\Code\DNNspot-Maps\DNNspot.Maps.Common\obj\Debug\DNNspot.Maps.Common.csprojResolveAssemblyReference.cache
