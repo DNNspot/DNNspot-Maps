@@ -71,7 +71,8 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
-    <Reference Include="WA.Geocoding">
+    <Reference Include="WA.Geocoding, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\WA.Geocoding.dll</HintPath>
     </Reference>
     <Reference Include="WA.Shared">

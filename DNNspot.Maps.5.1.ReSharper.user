@@ -18,10 +18,12 @@
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="1640" fromTop="34" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="9855" fromTop="16" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="8" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="314" fromTop="4" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="966" fromTop="14" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="10857" fromTop="24" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="0" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="435" fromTop="8" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="11148" fromTop="111" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeHandler.ashx.cs" caret="1747" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="3224" fromTop="17" />
     </RecentFiles>
     <RecentEdits>
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
@@ -47,7 +49,13 @@
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="3034" fromTop="31" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="504" fromTop="9" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="314" fromTop="4" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="12474" fromTop="25" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="12439" fromTop="25" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="4320" fromTop="30" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="4303" fromTop="26" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="7563" fromTop="6" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9271" fromTop="0" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9251" fromTop="20" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="3224" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -96,9 +104,9 @@
       <Item value="DNNspot" priority="6" />
       <Item value="Maps" priority="11" />
       <Item value="GeocodeHandler`0" priority="0" />
-      <Item value="else" priority="11" />
+      <Item value="else" priority="13" />
       <Item value="pnlGeocodeMarkers" priority="1" />
-      <Item value="false" priority="5" />
+      <Item value="false" priority="6" />
       <Item value="true" priority="9" />
       <Item value="txtShadowUrl" priority="0" />
       <Item value="txtTitle" priority="0" />
@@ -269,6 +277,7 @@
       <Item value="MarkerMetadata`0" priority="0" />
       <Item value="mc" priority="1" />
       <Item value="Id" priority="0" />
+      <Item value="try" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DNNspot.Maps.Common.ModuleBase+ControlKeys">
       <Item value="UploadMarkers" priority="0" />
@@ -379,7 +388,7 @@
       <Item value="GetTopMarkerByModuleId`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.Panel">
-      <Item value="Visible" priority="3" />
+      <Item value="Visible" priority="4" />
       <Item value="ClientID" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
@@ -453,7 +462,7 @@
       <Item value="CustomField" priority="3" />
       <Item value="ShowCustomFieldFilter" priority="3" />
       <Item value="Priority" priority="2" />
-      <Item value="ShowProximitySearch" priority="1" />
+      <Item value="ShowProximitySearch" priority="3" />
       <Item value="SearchResultsTemplate" priority="2" />
       <Item value="DirectionsLinkText" priority="2" />
       <Item value="PhoneNumber" priority="2" />

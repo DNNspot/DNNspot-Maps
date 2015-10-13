@@ -171,35 +171,44 @@ namespace DNNspot.Maps.Maps
             markerCollection.MarkAllAsDeleted();
             markerCollection.Save();
 
-            // Add new markers to db from csv
 
             while (reader.Read())
             {
-                var marker = new Marker
-                                 {
-                                     ModuleId = ModuleId,
-                                     Title = reader.GetField(title),
-                                     InfoWindowHtml = reader.GetField(infoWindowHtml),
-                                     Address1 = reader.GetField(address1),
-                                     Address2 = reader.GetField(address2),
-                                     City = reader.GetField(city),
-                                     Region = reader.GetField(region),
-                                     PostalCode = reader.GetField(postalCode),
-                                     Country = reader.GetField(country),
-                                     Latitude = WA.Parser.ToDouble(reader.GetField(latitude)),
-                                     Longitude = WA.Parser.ToDouble(reader.GetField(longitude)),
-                                     IconUrl = reader.GetField(iconUrl),
-                                     IconShadowUrl = reader.GetField(iconShadowUrl),
-                                     CustomField = reader.GetField(customField),
-                                     PhoneNumber = reader.GetField(phoneNumber),
-                                     Priority = (reader.GetField(priority) == "" || reader.GetField(priority) == null) ? "zzzz" : reader.GetField(priority)
-                                 };
-
-                marker.Save();
-
-                if(!marker.Latitude.HasValue && !marker.Longitude.HasValue)
+                // Add new markers to db from csv
+                try
                 {
-                    _markers.Add(marker);
+
+                    var marker = new Marker
+                    {
+                        ModuleId = ModuleId,
+                        Title = reader.GetField(title),
+                        InfoWindowHtml = reader.GetField(infoWindowHtml),
+                        Address1 = reader.GetField(address1),
+                        Address2 = reader.GetField(address2),
+                        City = reader.GetField(city),
+                        Region = reader.GetField(region),
+                        PostalCode = reader.GetField(postalCode),
+                        Country = reader.GetField(country),
+                        Latitude = WA.Parser.ToDouble(reader.GetField(latitude)),
+                        Longitude = WA.Parser.ToDouble(reader.GetField(longitude)),
+                        IconUrl = reader.GetField(iconUrl),
+                        IconShadowUrl = reader.GetField(iconShadowUrl),
+                        CustomField = reader.GetField(customField),
+                        PhoneNumber = reader.GetField(phoneNumber),
+                        Priority = (reader.GetField(priority) == "" || reader.GetField(priority) == null) ? "zzzz" : reader.GetField(priority)
+                    };
+
+                    marker.Save();
+
+                    if (!marker.Latitude.HasValue && !marker.Longitude.HasValue)
+                    {
+                        _markers.Add(marker);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
                 }
             }
 

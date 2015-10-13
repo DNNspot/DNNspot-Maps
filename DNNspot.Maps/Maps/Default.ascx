@@ -154,34 +154,33 @@
                     var state = "";
                     var city = "";
 
-                    if(jQuery("#<%= ddlCountries.ClientID %>")[0].selectedIndex >= 1)
-                    {
-                        //country = jQuery("#<%= ddlCountries.ClientID %>").val();
-                    }
+//                    if(jQuery("#<%= ddlCountries.ClientID %>")[0].selectedIndex >= 1)
+//                    {
+//                        //country = jQuery("#<%= ddlCountries.ClientID %>").val();
+//                    }
 
-                    if(jQuery("#states<%= ModuleId %>")[0].selectedIndex >= 1)
-                    {
-                        //state = jQuery("#states<%= ModuleId %>").val();
-                    }
+//                    if(jQuery("#states<%= ModuleId %>")[0].selectedIndex >= 1)
+//                    {
+//                        //state = jQuery("#states<%= ModuleId %>").val();
+//                    }
 
-                    if(jQuery("#cities<%= ModuleId %>")[0].selectedIndex >= 1)
-                    {
-                        //city = jQuery("#cities<%= ModuleId %>").val();
-                    }
+//                    if(jQuery("#cities<%= ModuleId %>")[0].selectedIndex >= 1)
+//                    {
+//                        //city = jQuery("#cities<%= ModuleId %>").val();
+//                    }
 
                     jQuery(".containCity").hide();
                     jQuery(".containRegion").hide();
 
-                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city,, 'maxPoints': '<%= maxPoints %>' };
+                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city, 'maxPoints': '<%= maxPoints %>' };
                     jQuery.post(postUrl, postVars, function (data) {
                         if (data.success) {
                             jQuery("#<%= ddlCountries.ClientID %>").html(data.countries);
                             jQuery("#states<%= ModuleId %>").html(data.states);
                             jQuery("#cities<%= ModuleId %>").html(data.cities);
                             if(data.markers.length > 0)
-                            {                                   
-                                initialize_<%= ModuleId %>(data.markers);                      
-
+                            {                               
+                                initialize_<%= ModuleId %>(data.markers);       
                             }
 
                             jQuery("#<%= ddlCountries.ClientID %>").val(country);
