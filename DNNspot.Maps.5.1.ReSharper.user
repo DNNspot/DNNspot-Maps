@@ -17,19 +17,16 @@
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="5900" fromTop="30" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:Coordinates.cs" caret="1640" fromTop="34" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="9855" fromTop="16" />
-      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2443" fromTop="8" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx" caret="0" fromTop="0" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MapLocation/f:Default.ascx" caret="0" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="435" fromTop="8" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="11148" fromTop="111" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeHandler.ashx.cs" caret="1747" fromTop="0" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="3224" fromTop="17" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx" caret="0" fromTop="0" />
+      <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2381" fromTop="32" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="5566" fromTop="31" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="12783" fromTop="56" />
     </RecentFiles>
     <RecentEdits>
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:CsvMarkerInfo.cs" caret="884" fromTop="20" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="0" fromTop="0" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ExtensionMethods.cs" caret="884" fromTop="20" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:MarkerExport.cs" caret="884" fromTop="20" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="6624" fromTop="7" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="0" fromTop="0" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="884" fromTop="20" />
@@ -56,6 +53,10 @@
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9271" fromTop="0" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:UploadMarkers.ascx.cs" caret="9251" fromTop="20" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="3224" fromTop="17" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="8466" fromTop="22" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9070" fromTop="33" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="7570" fromTop="5" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="12801" fromTop="56" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

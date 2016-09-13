@@ -148,7 +148,7 @@ namespace DNNspot.Maps.Maps
         protected new void Page_Init(object sender, EventArgs e)
         {
             base.Page_Init(sender, e);
-            RegisterJavascriptFileOnceInBody("GoogleMapsV3", "https://maps.googleapis.com/maps/api/js?sensor=false");
+            RegisterJavascriptFileOnceInBody("GoogleMapsV3", String.Format("https://maps.googleapis.com/maps/api/js?sensor=false&key={0}", Convert.ToString(Settings[ModuleSettingNames.ApiKey])));
         }
 
         protected void Page_Load(object sender, EventArgs e)

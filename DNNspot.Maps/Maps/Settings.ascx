@@ -234,6 +234,15 @@
         </tr>
         <tr>
             <td>
+                Google API Key
+            </td>
+            <td>
+                <asp:TextBox ID="txtGoogleApiKey" runat="server"></asp:TextBox><small><a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">Get your API Key: https://developers.google.com/maps/documentation/javascript/get-api-key</a></small>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
                 Map Height
             </td>
             <td>

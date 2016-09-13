@@ -39,6 +39,7 @@ namespace DNNspot.Maps.Maps {
         private void LoadControls() {
             var filePath = String.Format("{0}uploads/{1}", ModuleWebPath, Settings[ModuleSettingNames.FileName]);
 
+            txtGoogleApiKey.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.ApiKey]);
             txtTitle.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.Title]);
             txtInfoWindowHtml.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.InfoWindowHtml]);
             txtAddress1.Text = Convert.ToString(ModuleSettings[ModuleSettingNames.Address1]);
@@ -200,7 +201,12 @@ namespace DNNspot.Maps.Maps {
                 else
                     moduleController.DeleteModuleSetting(ModuleId, ModuleSettingNames.AutoZoomLevel);
 
-                moduleController.DeleteModuleSetting(ModuleId, "ApiKey");
+
+
+                if (!String.IsNullOrEmpty(txtGoogleApiKey.Text))
+                    moduleController.UpdateModuleSetting(ModuleId, ModuleSettingNames.ApiKey, txtGoogleApiKey.Text);
+                else
+                    moduleController.DeleteModuleSetting(ModuleId, ModuleSettingNames.ApiKey);
 
                 if (ckbShowFilter.Checked)
                     moduleController.UpdateModuleSetting(ModuleId, ModuleSettingNames.ShowMapFilter, ckbShowFilter.Checked.ToString());
@@ -245,6 +251,7 @@ namespace DNNspot.Maps.Maps {
     }
 
     public class ModuleSettingNames {
+        public const string ApiKey = "ApiKey";
         public const string Address1 = "Address1";
         public const string Address2 = "Address2";
         public const string City = "City";

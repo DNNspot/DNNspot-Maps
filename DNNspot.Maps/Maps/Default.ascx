@@ -260,6 +260,7 @@
                 title: marker.Title,
                 icon: marker.IconUrl,
                 shadow: marker.IconShadowUrl
+                //zIndex: beach[3]
             });
 
             mapMarkers_<%= ModuleId %>[i].listener = addMarkerListener_<%= ModuleId %>(i, mapMarkers_<%= ModuleId %>[i].marker);
