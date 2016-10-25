@@ -79,8 +79,9 @@ namespace DNNspot.Maps.Maps
         public bool IsSearch = false;
         public string CustomFieldLabel;
         public bool HidePointsOnPageLoad = false;
+        public string CustomFilterSelection = string.Empty;
 
-        private void LoadControls()
+        private void LoadControls(string customFilter = "")
         {
             if (Convert.ToBoolean(Settings[ModuleSettingNames.ShowMapFilter]))
             {
@@ -118,9 +119,14 @@ namespace DNNspot.Maps.Maps
             ddlCustomFilter.DataValueField = "CustomField";
             ddlCustomFilter.DataBind();
             ddlCustomFilter.Items.Insert(0, new ListItem("View All", ""));
+
+            if (!string.IsNullOrEmpty(customFilter))
+            {
+                ddlCustomFilter.SelectedValue = customFilter;
+            }
         }
 
-        private string LoadMarkers()
+        private string LoadMarkers(string customFieldFilter = "")
         {
             var markers = new List<ViewAbleMarker>();
             var markerQuery = new MarkerQuery();
@@ -132,6 +138,11 @@ namespace DNNspot.Maps.Maps
             {
                 maxPoints = 0;
                 markerQuery.es.Top = maxPoints;
+            }
+
+            if (!string.IsNullOrEmpty(customFieldFilter))
+            {
+                markerQuery.Where(markerQuery.CustomField == customFieldFilter);
             }
 
             markerCollection.Load(markerQuery);
@@ -153,8 +164,12 @@ namespace DNNspot.Maps.Maps
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Request.Params["custom"] != null)
+            {
+                CustomFilterSelection = Request.Params["custom"];                
+            }
             TargetModuleId = ModuleId.ToString();
-            if(Settings[ModuleSettingNames.HideMapPointsOnPageLoad] != null)
+            if (Settings[ModuleSettingNames.HideMapPointsOnPageLoad] != null)
             {
                 HidePointsOnPageLoad = Convert.ToBoolean(Settings[ModuleSettingNames.HideMapPointsOnPageLoad]);
             }
@@ -278,7 +293,13 @@ namespace DNNspot.Maps.Maps
 
             List<ViewAbleMarker> markers = new List<ViewAbleMarker>();
 
-            var geoResult = GeocodeLocation(address);
+            Coordinates geoResult = new Coordinates() { GeocodeSuccess = false };
+
+            if (!string.IsNullOrEmpty(address))
+            {
+                geoResult = GeocodeLocation(address);
+            }
+
             if (geoResult.GeocodeSuccess)
             {
                 var markersCollection = new MarkerCollection();
@@ -306,17 +327,21 @@ namespace DNNspot.Maps.Maps
             else
             {
                 LoadMembers();
-                LoadControls();
-                litError.Text = "Unable to geocode address";
-                pnlNoMatches.Visible = true;
-                litMarkers.Text = LoadMarkers();
+                LoadControls(CustomFilterSelection);
+                if (!string.IsNullOrEmpty(address))
+                {
+                    litError.Text = "Unable to geocode address";
+                    pnlNoMatches.Visible = true;
+                }
+
+                litMarkers.Text = !string.IsNullOrEmpty(CustomFilterSelection) ? LoadMarkers(CustomFilterSelection) : LoadMarkers();
             }
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             //Search(txtAddress.Text, ddlCustomFilter.SelectedValue, ddlProximity.SelectedValue);
-            
+
             var uri = new UriBuilder(Request.UrlReferrer);
             uri.Query = String.Format("address={0}&custom={1}&proximity={2}&m={3}", txtAddress.Text, ddlCustomFilter.SelectedValue, ddlProximity.SelectedValue, ModuleId);
             uri = uri;
