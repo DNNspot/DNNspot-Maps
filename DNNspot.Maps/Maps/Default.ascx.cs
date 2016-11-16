@@ -97,9 +97,24 @@ namespace DNNspot.Maps.Maps
             if (Convert.ToBoolean(Settings[ModuleSettingNames.ShowCustomFieldFilter]))
             {
                 pnlCustomMapFilter.Visible = true;
+                var customFields = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
 
-                ddlCustomField.DataSource = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
-                ddlCustomField.DataValueField = "CustomField";
+                var customFieldList = new List<ListItem>();
+
+                foreach(var field in customFields)
+                {
+                    var splittedCustomField = field.CustomField.Split('|');
+
+                    foreach(var splitted in splittedCustomField)
+                    {
+                        if (!string.IsNullOrEmpty(splitted))
+                        {
+                            customFieldList.Add(new ListItem() {Text = splitted});
+                        }
+                    }
+                }
+                ddlCustomField.DataSource = customFieldList.Distinct();
+                //ddlCustomField.DataValueField = "CustomField";
                 ddlCustomField.DataBind();
 
                 ddlCustomField.Items.Insert(0, new ListItem("Filter by:", ""));
@@ -164,9 +179,9 @@ namespace DNNspot.Maps.Maps
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Request.Params["custom"] != null)
+            if (Request.Params["custom"] != null)
             {
-                CustomFilterSelection = Request.Params["custom"];                
+                CustomFilterSelection = Request.Params["custom"];
             }
             TargetModuleId = ModuleId.ToString();
             if (Settings[ModuleSettingNames.HideMapPointsOnPageLoad] != null)

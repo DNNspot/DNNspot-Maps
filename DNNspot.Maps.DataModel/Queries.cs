@@ -235,7 +235,8 @@ namespace DNNspot.Maps.DataModel
 
             if (!String.IsNullOrEmpty(customField))
             {
-                q.Where(q.CustomField == customField);
+                q.Where(q.CustomField.Like(String.Format("%{0}%",customField))); 
+                //q.Where(q.CustomField == customField);
             }
 
             if (!String.IsNullOrEmpty(country))
