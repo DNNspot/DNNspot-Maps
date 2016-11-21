@@ -7,7 +7,7 @@
 			<foldername>DNNspot-Maps</foldername>
 			<modulename>DNNspot-Maps</modulename>
 			<description>Display markers on a Google map. Also, list them out and search for markers.</description>
-			<version>04.00.08</version>
+			<version>04.00.09</version>
 			<resourcefile>Resources.zip</resourcefile>
             <license src="license.html" />
 			<modules>
@@ -133,7 +133,7 @@
 			<foldername>DNNspot-Maps</foldername>
 			<modulename>DNNspot-MapsLocation</modulename>
 			<description>Display markers on a Google map. Also, list them out and search for markers.</description>
-			<version>04.00.08</version>
+			<version>04.00.09</version>
 			<modules>
 				<module>
 					<friendlyname>DNNspot Maps Location</friendlyname>
@@ -159,7 +159,7 @@
 			<foldername>DNNspot-Maps</foldername>
 			<modulename>DNNspot-Maps-MarkerListing</modulename>
 			<description>Allows you to display a list of markers.</description>
-			<version>04.00.08</version>
+			<version>04.00.09</version>
 			<modules>
 				<module>
 					<friendlyname>DNNspot Maps Marker Listing</friendlyname>

@@ -94,25 +94,27 @@ namespace DNNspot.Maps.Maps
                 ddlCountries.Items.Insert(0, new ListItem("Filter by:", ""));
             }
 
+            var customFields = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
+
+            var customFieldList = new List<ListItem>();
+
+            foreach (var field in customFields)
+            {
+                var splittedCustomField = field.CustomField.Split('|');
+
+                foreach (var splitted in splittedCustomField)
+                {
+                    if (!string.IsNullOrEmpty(splitted))
+                    {
+                        customFieldList.Add(new ListItem() { Text = splitted });
+                    }
+                }
+            }
+
             if (Convert.ToBoolean(Settings[ModuleSettingNames.ShowCustomFieldFilter]))
             {
                 pnlCustomMapFilter.Visible = true;
-                var customFields = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
 
-                var customFieldList = new List<ListItem>();
-
-                foreach(var field in customFields)
-                {
-                    var splittedCustomField = field.CustomField.Split('|');
-
-                    foreach(var splitted in splittedCustomField)
-                    {
-                        if (!string.IsNullOrEmpty(splitted))
-                        {
-                            customFieldList.Add(new ListItem() {Text = splitted});
-                        }
-                    }
-                }
                 ddlCustomField.DataSource = customFieldList.Distinct();
                 //ddlCustomField.DataValueField = "CustomField";
                 ddlCustomField.DataBind();
@@ -130,8 +132,8 @@ namespace DNNspot.Maps.Maps
             }
 
 
-            ddlCustomFilter.DataSource = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
-            ddlCustomFilter.DataValueField = "CustomField";
+            ddlCustomFilter.DataSource = customFieldList.Distinct();
+            //ddlCustomFilter.DataValueField = "CustomField";
             ddlCustomFilter.DataBind();
             ddlCustomFilter.Items.Insert(0, new ListItem("View All", ""));
 
