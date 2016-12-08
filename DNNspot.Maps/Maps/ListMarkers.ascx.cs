@@ -58,7 +58,13 @@ namespace DNNspot.Maps.Maps
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            BindMarkers();
+            if (Request.Params["custom"] != null)
+            {
+                CustomFilterSelection = Request.Params["custom"];
+            }
+
+            rptMarkers.DataSource = !string.IsNullOrEmpty(CustomFilterSelection) ? LoadMarkers(ModuleId, CustomFilterSelection) : LoadMarkers(ModuleId);
+
         }
 
         private void BindMarkers()

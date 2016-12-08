@@ -4,7 +4,7 @@
 <script type="text/javascript">
     var baseServiceUrl = "<%= GetModuleFolderPath() %>Maps/Services";
     var moduleId = '<%= ModuleId %>';
-    var maxPoints = '<%= maxPoints %>';
+    var maxPoints = '<%= MaxPoints %>';
 </script>
 <asp:Panel ID="pnlCustomSearchFilter" runat="server" Visible="true">
     <div class="distance">Starting Address:<br /><asp:TextBox ID="txtAddress" runat="server"></asp:TextBox></div>
@@ -92,7 +92,7 @@
                     var country = jQuery(this).val();
                     jQuery(".containCity").hide(); 
 
-                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'maxPoints': '<%= maxPoints %>' };
+                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'maxPoints': '<%= MaxPoints %>' };
                     jQuery.post(postUrl, postVars, function (data) {
                         if (data.success) {
                             jQuery("#states<%= ModuleId %>").html(data.states);
@@ -112,7 +112,7 @@
                     var country = jQuery("#<%= ddlCountries.ClientID %>").val();
                     var state = jQuery(this).val();
 
-                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'maxPoints': '<%= maxPoints %>' };
+                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'maxPoints': '<%= MaxPoints %>' };
                     jQuery.post(postUrl, postVars, function (data) {
                         if (data.success) {
                             jQuery("#cities<%= ModuleId %>").html(data.cities);
@@ -133,7 +133,7 @@
                     var state = jQuery("#states<%= ModuleId %>").val();
                     var city = jQuery(this).val();
 
-                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city, 'maxPoints': '<%= maxPoints %>' };
+                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city, 'maxPoints': '<%= MaxPoints %>' };
                     jQuery.post(postUrl, postVars, function (data) {
                         if (data.success) {                            
                             if(data.markers.length > 0)
@@ -172,7 +172,7 @@
                     jQuery(".containCity").hide();
                     jQuery(".containRegion").hide();
 
-                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city, 'maxPoints': '<%= maxPoints %>' };
+                    var postVars = { 'moduleId': moduleId, 'customField': customField, 'country': country, 'state': state, 'city': city, 'maxPoints': '<%= MaxPoints %>' };
                     jQuery.post(postUrl, postVars, function (data) {
                         if (data.success) {
                             jQuery("#<%= ddlCountries.ClientID %>").html(data.countries);
@@ -205,9 +205,13 @@
         <% } else { %>
             var mapOptions_<%= ModuleId %> = {
                 zoom: <%= MapZoom ?? Settings[ModuleSettingNames.MapZoom] ?? "10" %>,
-                center: new google.maps.LatLng(markers[0].Latitude, markers[0].Longitude),
                 mapTypeId: google.maps.MapTypeId.<%= Settings[ModuleSettingNames.MapMode] ?? "ROADMAP" %>
             };
+
+            if(markers.Length > 0)
+            {
+                mapOptions.center = new google.maps.LatLng(markers[0].Latitude, markers[0].Longitude);
+            }
         <% } %>
 
         map_<%= ModuleId %> = new google.maps.Map(document.getElementById("DNNspot-Maps-Map-<%=ModuleId%>"), mapOptions_<%= ModuleId %>);

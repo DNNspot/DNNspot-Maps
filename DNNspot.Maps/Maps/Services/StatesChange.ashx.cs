@@ -52,7 +52,7 @@ namespace DNNspot.Maps.Maps.Services
 
             context.Response.ContentType = "application/json";
 
-            int maxPoints = Convert.ToInt32(request.Params["maxPoints"]);
+            int maxPoints = Convert.ToInt32(request.Params["MaxPoints"]);
 
             var customField = request.Params["customField"];
             var country = request.Params["country"];

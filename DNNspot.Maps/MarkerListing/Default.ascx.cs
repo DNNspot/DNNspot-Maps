@@ -31,6 +31,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DNNspot.Maps.Common;
+using DNNspot.Maps.DataModel;
 using DNNspot.Maps.DataModel.ES;
 
 namespace DNNspot.Maps.MarkerListing
@@ -47,6 +48,10 @@ namespace DNNspot.Maps.MarkerListing
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Params["custom"] != null)
+            {
+                CustomFilterSelection = Request.Params["custom"];
+            }
 
             StringBuilder html = new StringBuilder();
             if ((Settings[ModuleSettingNames.TargetModule] != null) && (Settings[ModuleSettingNames.ListTemplate] != null))
@@ -54,7 +59,7 @@ namespace DNNspot.Maps.MarkerListing
                 int moduleId = Convert.ToInt32(TargetModuleId);
                 string template = Convert.ToString(Settings[ModuleSettingNames.ListTemplate]);
 
-                IEnumerable<Marker> markers = GetModuleMarkers(moduleId);
+                List<ViewAbleMarker> markers = LoadMarkers(moduleId, CustomFilterSelection);
 
                 html = ReplaceTokens(markers, template, moduleId);
             }

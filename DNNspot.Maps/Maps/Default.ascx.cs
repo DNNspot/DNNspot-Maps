@@ -72,14 +72,11 @@ namespace DNNspot.Maps.Maps
         }
 
         public string TargetModuleId;
-        public int maxPoints = 0;
         protected string MapLocation = null;
         protected string MapZoom = null;
         protected int AutoZoomLevel = -1;
         public bool IsSearch = false;
         public string CustomFieldLabel;
-        public bool HidePointsOnPageLoad = false;
-        public string CustomFilterSelection = string.Empty;
 
         private void LoadControls(string customFilter = "")
         {
@@ -87,14 +84,14 @@ namespace DNNspot.Maps.Maps
             {
                 pnlMapFilters.Visible = true;
 
-                ddlCountries.DataSource = Queries.GetDistinctCountries(ModuleId, maxPoints, String.Empty);
+                ddlCountries.DataSource = Queries.GetDistinctCountries(ModuleId, MaxPoints, String.Empty);
                 ddlCountries.DataValueField = "Country";
                 ddlCountries.DataBind();
 
                 ddlCountries.Items.Insert(0, new ListItem("Filter by:", ""));
             }
 
-            var customFields = Queries.GetDistinctCustomFields(ModuleId, maxPoints);
+            var customFields = Queries.GetDistinctCustomFields(ModuleId, MaxPoints);
 
             var customFieldList = new List<ListItem>();
 
@@ -143,30 +140,6 @@ namespace DNNspot.Maps.Maps
             }
         }
 
-        private string LoadMarkers(string customFieldFilter = "")
-        {
-            var markers = new List<ViewAbleMarker>();
-            var markerQuery = new MarkerQuery();
-            var markerCollection = new MarkerCollection();
-
-            markerQuery.Where(markerQuery.ModuleId == ModuleId && markerQuery.Latitude.IsNotNull() && markerQuery.Longitude.IsNotNull()).OrderBy("Priority");
-
-            if (HidePointsOnPageLoad)
-            {
-                maxPoints = 0;
-                markerQuery.es.Top = maxPoints;
-            }
-
-            if (!string.IsNullOrEmpty(customFieldFilter))
-            {
-                markerQuery.Where(markerQuery.CustomField == customFieldFilter);
-            }
-
-            markerCollection.Load(markerQuery);
-            markerCollection.ToList().ForEach(marker => markers.Add(new ViewAbleMarker(marker)));
-
-            return SerializeMarkers(markers);
-        }
 
         private string SerializeMarkers(List<ViewAbleMarker> markers)
         {
@@ -206,10 +179,10 @@ namespace DNNspot.Maps.Maps
 
                 if (HidePointsOnPageLoad)
                 {
-                    maxPoints = 0;
+                    MaxPoints = 0;
                 }
 
-                litMarkers.Text = LoadMarkers();
+                litMarkers.Text = SerializeMarkers(LoadMarkers(ModuleId));
 
                 if (Request.Params["m"] != null && Request.Params["address"] != null)
                 {
@@ -222,7 +195,7 @@ namespace DNNspot.Maps.Maps
                         var proximity = Request.Params["proximity"];
 
                         IsSearch = true;
-                        maxPoints = 9999999;
+                        MaxPoints = 9999999;
                         Search(address, custom, proximity);
 
                         txtAddress.Text = address;
@@ -338,7 +311,7 @@ namespace DNNspot.Maps.Maps
                     LoadControls();
                     litError.Text = "We currently do not have any locations that match your criteria";
                     pnlNoMatches.Visible = true;
-                    litMarkers.Text = LoadMarkers();
+                    litMarkers.Text = SerializeMarkers(LoadMarkers(ModuleId));
                 }
             }
             else
@@ -351,7 +324,7 @@ namespace DNNspot.Maps.Maps
                     pnlNoMatches.Visible = true;
                 }
 
-                litMarkers.Text = !string.IsNullOrEmpty(CustomFilterSelection) ? LoadMarkers(CustomFilterSelection) : LoadMarkers();
+                litMarkers.Text = !string.IsNullOrEmpty(CustomFilterSelection) ? SerializeMarkers(LoadMarkers(ModuleId, CustomFilterSelection)) : SerializeMarkers(LoadMarkers(ModuleId));
             }
         }
 

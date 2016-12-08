@@ -31,6 +31,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI.HtmlControls;
 using DNNspot.Maps.DataModel;
+using DNNspot.Maps.DataModel.ES;
 using DotNetNuke.Entities.Modules;
 using EntitySpaces.Interfaces;
 using EntitySpaces.LoaderMT;
@@ -44,6 +45,11 @@ namespace DNNspot.Maps.Common
         {
             get { return String.Format("/DesktopModules/{0}/", ModuleConfiguration.FolderName); }
         }
+
+
+        public bool HidePointsOnPageLoad = false;
+        public int MaxPoints = 0;
+        public string CustomFilterSelection = string.Empty;
 
         public static class ControlKeys
         {
@@ -215,6 +221,30 @@ namespace DNNspot.Maps.Common
             {
                 Page.ClientScript.RegisterClientScriptInclude(keyName, pathToJsFile);
             }
+        }
+
+        public List<ViewAbleMarker> LoadMarkers(int moduleId, string customFieldFilter = "")
+        {
+            var markers = new List<ViewAbleMarker>();
+            var markerQuery = new MarkerQuery();
+            var markerCollection = new MarkerCollection();
+
+            markerQuery.Where(markerQuery.ModuleId == moduleId && markerQuery.Latitude.IsNotNull() && markerQuery.Longitude.IsNotNull()).OrderBy("Priority");
+
+            if (HidePointsOnPageLoad)
+            {
+                MaxPoints = 0;
+                markerQuery.es.Top = MaxPoints;
+            }
+
+            if (!string.IsNullOrEmpty(customFieldFilter))
+            {
+                markerQuery.Where(markerQuery.CustomField.Like(String.Format("%{0}%", customFieldFilter)));
+            }
+
+            markerCollection.Load(markerQuery);
+            markerCollection.ToList().ForEach(marker => markers.Add(new ViewAbleMarker(marker)));
+            return markers;
         }
 
         protected void RegisterJavascript(string fullPath)
