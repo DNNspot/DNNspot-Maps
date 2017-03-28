@@ -64,6 +64,7 @@ namespace DNNspot.Maps.Maps
             }
 
             rptMarkers.DataSource = !string.IsNullOrEmpty(CustomFilterSelection) ? LoadMarkers(ModuleId, CustomFilterSelection) : LoadMarkers(ModuleId);
+            rptMarkers.DataBind();
 
         }
 
