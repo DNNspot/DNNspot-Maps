@@ -21,13 +21,13 @@
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:ViewableMarker.cs" caret="2381" fromTop="32" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:GeocodeHandler.ashx.cs" caret="5796" fromTop="9" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/d:Services/f:CustomFieldChange.ashx.cs" caret="3197" fromTop="53" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx" caret="0" fromTop="0" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx" caret="9652" fromTop="45" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="2383" fromTop="30" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="12153" fromTop="32" />
       <File id="B083AD9D-8926-4E3D-9FD7-E94E77991A99/f:Queries.cs" caret="7961" fromTop="32" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="2494" fromTop="34" />
-      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="10691" fromTop="38" />
+      <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="11327" fromTop="54" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx" caret="1111" fromTop="26" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="2590" fromTop="34" />
     </RecentFiles>
     <RecentEdits>
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="7651" fromTop="54" />
@@ -53,13 +53,13 @@
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="2116" fromTop="34" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="10421" fromTop="32" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="10180" fromTop="26" />
-      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="2460" fromTop="33" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="12320" fromTop="33" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="6870" fromTop="33" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:Default.ascx.cs" caret="11770" fromTop="33" />
       <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:MarkerListing/f:Default.ascx.cs" caret="2341" fromTop="31" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="11014" fromTop="47" />
       <File id="008C7EA2-9F02-49AF-B6A8-3949B1AC4C97/f:ModuleBase.cs" caret="10691" fromTop="38" />
+      <File id="441C75C5-E489-4F25-AEAD-F56455051CE0/d:Maps/f:ListMarkers.ascx.cs" caret="2590" fromTop="34" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -291,7 +291,7 @@
       <Item value="EnvironmentVariableTarget`0" priority="0" />
       <Item value="splitted" priority="1" />
       <Item value="customFieldList" priority="0" />
-      <Item value="rptMarkers" priority="0" />
+      <Item value="rptMarkers" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DNNspot.Maps.Common.ModuleBase+ControlKeys">
       <Item value="UploadMarkers" priority="0" />
@@ -552,7 +552,7 @@
       <Item value="Default" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.UI.WebControls.Repeater">
-      <Item value="DataBind`0" priority="0" />
+      <Item value="DataBind`0" priority="1" />
       <Item value="DataSource" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@DNNspot.Maps.DataModel.ES.Marker">

@@ -229,7 +229,7 @@ namespace DNNspot.Maps.Common
             var markerQuery = new MarkerQuery();
             var markerCollection = new MarkerCollection();
 
-            markerQuery.Where(markerQuery.ModuleId == moduleId && markerQuery.Latitude.IsNotNull() && markerQuery.Longitude.IsNotNull()).OrderBy("Priority");
+            markerQuery.Where(markerQuery.ModuleId == moduleId && markerQuery.Latitude.IsNotNull() && markerQuery.Longitude.IsNotNull()).OrderBy("Priority").OrderBy(markerQuery.Title.Ascending);
 
             if (HidePointsOnPageLoad)
             {
